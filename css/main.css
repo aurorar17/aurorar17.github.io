@@ -53,7 +53,7 @@ h3 a {
 /* Header Section */
 
 .header-section {
-  background-color: rgba(0, 0, 0, 0.1);
+  /* background-color: rgba(0, 0, 0, 0.1); */
   color: white;
   width: 100%;
   position: fixed;

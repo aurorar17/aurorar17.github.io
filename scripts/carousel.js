@@ -5,23 +5,29 @@ document.addEventListener("DOMContentLoaded", () => {
   // Keep the previous carousel behavior on mobile and tablet.
   if (!window.matchMedia("(min-width: 900px)").matches) {
     const images = Array.from(container.children);
-    const containerWidth = container.offsetWidth;
     let scrollAmount = 0;
+
+    container.style.width = "max-content";
+    container.style.minWidth = "100%";
+    container.style.willChange = "transform";
+    container.style.transition = "none";
 
     images.forEach((image) => container.appendChild(image.cloneNode(true)));
 
     function scrollCarousel() {
-      scrollAmount -= 2;
+      const trackWidth = container.scrollWidth;
+      const mobileSpeed = 0.5;
+      scrollAmount -= mobileSpeed;
       container.style.transform = `translateX(${scrollAmount}px)`;
 
-      if (Math.abs(scrollAmount) >= containerWidth) {
+      if (Math.abs(scrollAmount) >= trackWidth / 2) {
         scrollAmount = 0;
         container.style.transition = "none";
         container.style.transform = `translateX(${scrollAmount}px)`;
 
         setTimeout(() => {
-          container.style.transition = "transform 0.5s ease-in-out";
-        }, 50);
+          container.style.transition = "none";
+        }, 20);
       }
     }
 
