@@ -150,6 +150,17 @@ a {
   color: inherit;
 }
 
+.project-description a {
+  color: #b8d7ff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 700;
+}
+
+.project-description a:hover {
+  color: #ffffff;
+}
+
 .clickable-div {
   display: flex;
   align-items: left;
