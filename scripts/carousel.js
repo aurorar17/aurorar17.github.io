@@ -1,32 +1,71 @@
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".technologies-container");
-  const images = Array.from(container.children);
-  const containerWidth = container.offsetWidth;
-  let scrollAmount = 0;
+  if (!container) return;
 
-  // Crea una copia delle immagini per il loop infinito
-  images.forEach((image) => {
-    const clone = image.cloneNode(true);
-    container.appendChild(clone); // Aggiungi le copie alla fine del contenitore
-  });
+  // Keep the previous carousel behavior on mobile and tablet.
+  if (!window.matchMedia("(min-width: 900px)").matches) {
+    const images = Array.from(container.children);
+    const containerWidth = container.offsetWidth;
+    let scrollAmount = 0;
 
-  function scrollCarousel() {
-    scrollAmount -= 2; // Velocità dello scorrimento, puoi regolarla
-    container.style.transform = `translateX(${scrollAmount}px)`;
+    images.forEach((image) => container.appendChild(image.cloneNode(true)));
 
-    // Quando la prima immagine esce completamente dallo schermo, riposiziona il carosello
-    if (Math.abs(scrollAmount) >= containerWidth) {
-      scrollAmount = 0; // Ripristina lo scroll
-      // Ripristina la posizione in modo invisibile
-      container.style.transition = "none"; // Disabilita temporaneamente la transizione
-      container.style.transform = `translateX(${scrollAmount}px)`; // Riporta all'inizio
+    function scrollCarousel() {
+      scrollAmount -= 2;
+      container.style.transform = `translateX(${scrollAmount}px)`;
 
-      // Riattiva la transizione per il prossimo movimento fluido
-      setTimeout(() => {
-        container.style.transition = "transform 0.5s ease-in-out"; // Transizione fluida
-      }, 50); // La transizione riattivata dopo una breve pausa
+      if (Math.abs(scrollAmount) >= containerWidth) {
+        scrollAmount = 0;
+        container.style.transition = "none";
+        container.style.transform = `translateX(${scrollAmount}px)`;
+
+        setTimeout(() => {
+          container.style.transition = "transform 0.5s ease-in-out";
+        }, 50);
+      }
     }
+
+    setInterval(scrollCarousel, 16);
+    return;
   }
 
-  setInterval(scrollCarousel, 16); // 60 FPS (16ms per frame)
+  const icons = Array.from(container.children);
+  if (icons.length === 0) return;
+
+  const firstGroup = document.createElement("div");
+  firstGroup.className = "technology-group";
+  icons.forEach((icon) => firstGroup.appendChild(icon));
+
+  const secondGroup = firstGroup.cloneNode(true);
+  secondGroup.setAttribute("aria-hidden", "true");
+  secondGroup.querySelectorAll("img").forEach((icon) => {
+    icon.alt = "";
+  });
+
+  container.replaceChildren(firstGroup, secondGroup);
+  container.style.transition = "none";
+
+  let groupWidth = firstGroup.getBoundingClientRect().width;
+  let offset = 0;
+  let previousTime = 0;
+  const speed = 35; // pixel al secondo
+
+  const resizeObserver = new ResizeObserver(() => {
+    groupWidth = firstGroup.getBoundingClientRect().width;
+    offset = groupWidth ? offset % groupWidth : 0;
+  });
+  resizeObserver.observe(firstGroup);
+
+  function animate(time) {
+    if (previousTime) {
+      const elapsed = Math.min((time - previousTime) / 1000, 0.05);
+      offset = (offset + speed * elapsed) % groupWidth;
+      container.style.transform = `translateX(${-offset}px)`;
+    }
+
+    previousTime = time;
+    requestAnimationFrame(animate);
+  }
+
+  requestAnimationFrame(animate);
 });

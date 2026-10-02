@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aurora R. portfolio</title>
+    <title>Aurora Roilo - Portfolio</title>
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/desktop.css">
-    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/desktop.css?v=20261002-8">
+    <link rel="stylesheet" href="./css/mobile.css?v=20261002">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
@@ -17,13 +17,17 @@
         <section class="header-section">
             <div class="header-content">
                 <div class="header-top">
-                    <h1>Aurora Roilo</h1>
-                    <button id="header-button">Resume</button>
-                </div>
-                <div class="desktop-menu-section">
-                    <button onclick="scrollToSection('technologies-section')">Technologies</button>
-                    <button onclick="scrollToSection('projects-section')">Projects</button>
-                    <button onclick="scrollToSection('experience-section')">Experience</button>
+                    <div class="header-identity">
+                        <h1>Aurora Roilo</h1>
+                        <h3><strong>Digital Business Student</strong></h3>
+                    </div>
+                    <button id="header-button" class="resume-mobile">Download Resume</button>
+                    <div class="desktop-menu-section">
+                        <button class="resume-desktop">Download Resume</button>
+                        <button onclick="scrollToSection('technologies-section')">Technologies</button>
+                        <button onclick="scrollToSection('projects-section')">Projects</button>
+                        <button onclick="scrollToSection('experience-section')">Experience</button>
+                    </div>
                 </div>
             </div>
             <div class="social-media-mobile">
@@ -31,8 +35,8 @@
                     <ul>
                         <li><a href="tel:+12367850773" target="_blank"><img src="./assets/call.png" alt="call icon"></a></li>
                         <li><a href="mailto:dev.aurorar17@gmail.com" target="_blank"><img src="./assets/email.png" alt="email icon"></a></li>
-                        <li><a href="https://github.com/aurorar17" target="_blank"><img src="./assets/github.png" alt="github icon"></a></li>
                         <li><a href="https://www.linkedin.com/in/auroraroilo117/" target="_blank"><img src="./assets/linkedin.png" alt="linkedin icon"></a></li>
+                        <li><a href="https://github.com/aurorar17" target="_blank"><img src="./assets/github.png" alt="github icon"></a></li>
                         <li><a href="https://www.figma.com/@yourusername" target="_blank"><img src="./assets/figma.png" alt="figma icon"></a></li>
                     </ul>
                 </nav>
@@ -43,8 +47,8 @@
                 <ul>
                     <li><a href="tel:+12367850773" target="_blank"><img src="./assets/call.png" alt="call icon"></a></li>
                     <li><a href="mailto:dev.aurorar17@gmail.com" target="_blank"><img src="./assets/email.png" alt="email icon"></a></li>
-                    <li><a href="https://github.com/aurorar17" target="_blank"><img src="./assets/github.png" alt="github icon"></a></li>
                     <li><a href="https://www.linkedin.com/in/auroraroilo117/" target="_blank"><img src="./assets/linkedin.png" alt="linkedin icon"></a></li>
+                    <li><a href="https://github.com/aurorar17" target="_blank"><img src="./assets/github.png" alt="github icon"></a></li>
                     <li><a href="https://www.figma.com/@yourusername" target="_blank"><img src="./assets/figma.png" alt="figma icon"></a></li>
                 </ul>
             </nav>
@@ -52,13 +56,39 @@
     </header>
     <main>
         <section class="presentation-section">
-            <div class="text-container">
-                <p><strong>I am a front-end developer 👩🏻‍💻</strong></p>
-                <p style="margin-top: 10%;"><strong>Welcome to my portfolio!</strong></p>
+            <div class="presentation-desktop">
+                <div class="profile-grid">
+                    <article class="profile-copy">
+                        <h4>Professional Profile</h4>
+                        <p>Digital Business student with practical experience across warehouse operations, retail, administration and shift leadership.
+                            At Nike and Decathlon, supported inventory organization, product picking, goods handling and stock tracking; as a shift
+                            leader, planned staff schedules and managed supply orders. Brings strong attention to detail, team coordination, digital
+                            tools and a process-focused approach. Seeking an internship in logistics, inventory or retail operations.</p>
+                    </article>
+                    <div class="profile-photo">
+                        <img src="./assets/prof.png" alt="Aurora outdoors in the mountains">
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./assets/pers.prof.png" alt="Aurora playing soccer">
+                    </div>
+                    <article class="profile-copy">
+                        <h4>Personal Profile</h4>
+                        <p>Outdoor enthusiast: skiing, scuba diving and hiking.
+                            Player for the Maerne feminine football team as midfielder.
+                            Editing videos for my private youtube channel documenting my trips or adventures.
+                            Volunteer for Jef (Mestre, Italy).</p>
+                    </article>
+                </div>
             </div>
-            <div class="gif-container">
-                <div class="overlay"></div>
-                <img src="./assets/presentation.gif" alt="Presentation GIF">
+            <div class="presentation-mobile">
+                <div class="text-container">
+                    <p><strong>Digital Business Student</strong></p>
+                    <p style="margin-top: 10%;"><strong>Welcome to my portfolio!</strong></p>
+                </div>
+                <div class="gif-container">
+                    <div class="overlay"></div>
+                    <img src="./assets/presentation.gif" alt="Presentation GIF">
+                </div>
             </div>
         </section>
         <div class="mobile-menu-section">
@@ -70,14 +100,18 @@
         </div>
         <section class="carousel-section" id="technologies-section">
             <h2>Technologies</h2>
-            <div class="carousel-container" style="margin-top: 10%;">
+            <div class="carousel-container" style="margin-top: 10px;">
                 <div class="technologies-container">
-                    <img src="./assets/html.png" alt="HTML icon">
+                    <img src=" ./assets/html.png" alt="HTML icon">
                     <img src="./assets/css.png" alt="CSS icon">
                     <img src="./assets/javascript.png" alt="JavaScript icon">
                     <img src="./assets/react.png" alt="React icon">
                     <img src="./assets/figma2.png" alt="Figma Icon">
                     <img src="./assets/sql.png" alt="sql icon">
+                    <img src="./assets/python.png" alt="Python icon">
+                    <img src="./assets/xlsx.png" alt="excel icon">
+                    <img src="./assets/ppt.png" alt="powerpoint icon">
+                    <img src="./assets/docx.png" alt="word icon">
                 </div>
             </div>
         </section>
@@ -144,12 +178,12 @@
     </main>
     <footer>
         <section class="footer-section">
-            <h3 id="footer-title">Let's work together!</h3>
+            <h3 id="footer-title">Contacts:</h3>
             <div id="contacts-container">
                 <ul class="contacts-list">
                     <li><img src="./assets/mail.png" alt="mail icon"><a href="mailto:aurora.roilo01@gmail.com">dev.aurorar17@gmail.com</a></li>
                     <li><img src="./assets/call.png" alt="phone icon"><a href="tel:+12367850773">+1 (235) 7850773</a></li>
-                    <li><img src="./assets/call.png" alt="phone icon"><a href="tel:+393319995448">+39 333 9995448</a></li>
+                    <li><img src="./assets/call.png" alt="phone icon"><a href="tel:+393319995448">+39 331 9995448</a></li>
                 </ul>
             </div>
             <div class="footer-content">

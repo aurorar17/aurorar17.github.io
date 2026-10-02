@@ -46,7 +46,7 @@ h3 a {
 /* Header Section */
 
 .header-section {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.1);
   color: white;
   width: 100%;
   position: fixed;
@@ -78,8 +78,9 @@ h3 a {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
 }
+*/
 
-.presentation-section h2,
+/* .presentation-section h2,
 .presentation-section p {
   color: white;
   opacity: 0;
@@ -144,7 +145,7 @@ a {
 
 .clickable-div {
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: space-between;
 }
 
