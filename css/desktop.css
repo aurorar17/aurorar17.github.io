@@ -256,14 +256,19 @@
 
   /* technolies section */
 
+  .carousel-section h2,
+  .carousel-section .carousel-container {
+    margin-left: 5%;
+    margin-right: 12%;
+  }
+
   .carousel-container {
     display: flex;
     justify-content: flex-start;
-    width: calc(100% - 40px);
-    margin-left: 20px;
-    margin-right: 20px;
+    width: auto;
     margin-top: 0%;
     box-sizing: border-box;
+    overflow: hidden;
   }
 
   .technologies-container {
@@ -274,13 +279,11 @@
     padding: 0;
     margin: 0;
     justify-content: flex-start;
-    padding-left: 200px;
-    padding-right: 200px;
   }
 
   .technologies-container img {
-    width: 60px;
-    height: auto;
+    width: 55px;
+    height: 65px;
     display: block;
     flex: 0 0 60px;
   }
