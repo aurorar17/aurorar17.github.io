@@ -200,6 +200,11 @@
     margin-top: 24px;
   }
 
+  #personal-profile {
+    margin-top: 4%;
+    padding-bottom: 4%;
+  }
+
   .profile-copy,
   .profile-photo {
     min-width: 0;
@@ -367,6 +372,28 @@
     margin-bottom: 1rem;
     font-size: clamp(1.3rem, 1.8vw, 2rem);
     color: white;
+  }
+
+  .certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 20px;
+  }
+
+  .skill-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 18px 22px;
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: 600;
+    box-sizing: border-box;
   }
 
   .future-project {
