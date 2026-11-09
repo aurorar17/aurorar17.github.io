@@ -1,4 +1,8 @@
 @media screen and (min-width: 900px) {
+  #technologies-section {
+    margin-top: 5%;
+  }
+
 .carousel-section h2,
   .carousel-section .carousel-container {
     margin-left: 5%;

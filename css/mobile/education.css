@@ -19,8 +19,107 @@
 
   .certifications-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1fr);
     gap: 16px;
+  }
+
+  #certifications-section .future-project {
+    display: none;
+  }
+
+  #certifications-section .certification-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  #certifications-section .certification-copy {
+    display: contents;
+  }
+
+  #certifications-section .certification-card h3 {
+    order: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  #certifications-section .certification-preview {
+    order: 1;
+    float: none;
+    width: min(180px, 55%);
+    margin: 0 auto;
+  }
+
+  #certifications-section .certification-provider {
+    order: 2;
+    margin: 0;
+  }
+
+  #certifications-section .certification-highlights {
+    order: 3;
+    margin: 0;
+    padding-left: 22px;
+    list-style: disc outside;
+    line-height: 1.55;
+  }
+
+  #certifications-section .certification-highlights li + li {
+    margin-top: 8px;
+  }
+
+  .experience-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .experience-card {
+    padding: 18px;
+    border-radius: 14px;
+    background-color: rgba(0, 0, 0, 0.42) !important;
+  }
+
+  .experience-card h3 {
+    margin: 0 0 6px;
+    text-align: left;
+  }
+
+  .experience-meta {
+    margin: 0 0 14px;
+    color: rgba(255, 255, 255, 0.76);
+    line-height: 1.5;
+  }
+
+  .experience-location {
+    white-space: normal;
+  }
+
+  .experience-list {
+    margin: 0;
+    padding-left: 22px;
+    list-style: disc outside;
+    line-height: 1.55;
+  }
+
+  .experience-list li + li {
+    margin-top: 8px;
+  }
+
+  .experience-additional {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.22);
+  }
+
+  .experience-additional h4 {
+    margin: 0 0 8px;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.85rem;
+    text-align: left;
+    text-transform: uppercase;
   }
 
   .skills-grid {

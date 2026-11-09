@@ -40,6 +40,28 @@
     box-sizing: border-box;
   }
 
+  .project-learning {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.22);
+    font-size: 0.9rem;
+  }
+
+  .project-learning span {
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  .project-learning strong {
+    padding: 4px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 999px;
+    font-weight: 600;
+  }
+
   .data-analysis-demo {
     padding: 28px 30px 32px;
   }

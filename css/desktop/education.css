@@ -9,8 +9,18 @@
 
   .education-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  #hard-skills-section {
+    width: 100%;
+    margin: 0;
+  }
+
+  #soft-skills-section {
+    width: 100%;
+    margin: 0;
   }
 
   .education-card {
@@ -18,6 +28,59 @@
     color: white;
     padding: 5% 5%;
     box-sizing: border-box;
+    border-radius: 14px;
+  }
+
+  .experience-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .experience-card h3 {
+    margin-bottom: 6px;
+    text-align: left;
+    text-transform: capitalize;
+  }
+
+  .experience-meta {
+    margin: 0 0 16px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.95rem;
+  }
+
+  .experience-location {
+    white-space: nowrap;
+  }
+
+  .country-flag {
+    display: inline-block;
+    margin-right: 3px;
+    font-size: 1.05em;
+    vertical-align: -0.05em;
+  }
+
+  .experience-list {
+    margin: 0;
+    padding-left: 22px;
+    list-style: disc outside;
+    line-height: 1.6;
+  }
+
+  .experience-list li + li {
+    margin-top: 6px;
+  }
+
+  .experience-additional {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.22);
+  }
+
+  .experience-additional h4 {
+    margin: 0 0 10px;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.88rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 
   .education-card h3 {
@@ -27,16 +90,122 @@
     color: white;
   }
 
+  .education-coursework {
+    margin-top: 22px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.22);
+  }
+
+  .coursework-label {
+    margin: 0 0 8px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .upcoming-label {
+    margin-top: 14px;
+  }
+
+  .education-coursework .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .education-coursework .tag-list li {
+    padding: 4px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 999px;
+    color: white;
+    font-size: 0.84rem;
+  }
+
   .certifications-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
   }
 
+  .certification-card {
+    display: block;
+  }
+
+  .certification-copy {
+    min-width: 0;
+  }
+
+  .certification-card::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+
+  .certification-card h3 {
+    margin-bottom: 8px;
+    text-align: left;
+  }
+
+  .certification-provider {
+    margin-bottom: 14px;
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  .certification-highlights {
+    margin: 0;
+    padding-left: 20px;
+    list-style: disc outside;
+    line-height: 1.55;
+  }
+
+  .certification-preview {
+    float: right;
+    width: 120px;
+    display: block;
+    overflow: hidden;
+    margin: 0 0 14px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 6px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.35);
+  }
+
+  .certification-preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px 20px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+    gap: 20px;
+  }
+
+  .skill-group {
+    padding: 22px;
+    border-radius: 14px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .skills-provider {
+    margin: 0 0 16px;
+    color: white;
+    font-size: clamp(1.1rem, 1.5vw, 1.5rem);
+    text-align: left;
+  }
+
+  .skill-list {
+    display: grid;
+    gap: 9px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
   .skill-card {
