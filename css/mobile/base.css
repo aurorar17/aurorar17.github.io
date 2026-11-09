@@ -1,6 +1,27 @@
 @media screen and (max-width: 899px) {
+  html {
+    background-color: #06120f;
+  }
+
 body {
+    position: relative;
+    isolation: isolate;
     overflow-x: hidden;
+    background-image: none;
+    background-color: transparent;
+    background-attachment: scroll;
+  }
+
+  body::before {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url("../../assets/background.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    pointer-events: none;
   }
 
   main {

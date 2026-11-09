@@ -2,13 +2,25 @@
   .education-section {
     padding: 5%;
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: transparent;
     color: white;
   }
 
   .education-section .education-card {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
+    border-radius: 12px;
+    padding: 18px;
+  }
+
+  .education-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .education-coursework {
+    display: none;
   }
 
   .education-section h3,

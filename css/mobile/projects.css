@@ -1,6 +1,16 @@
 @media screen and (max-width: 899px) {
+  .projects-stack {
+    display: grid;
+    gap: 12px;
+  }
+
+  #projects-section .future-project {
+    display: none;
+  }
+
 .projects-section {
     padding: 2%;
+    border-radius: 12px;
   }
 
   .projects-column-title {
