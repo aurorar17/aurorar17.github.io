@@ -1,0 +1,77 @@
+@media screen and (min-width: 900px) {
+.education-section {
+    width: min(88vw, 1200px);
+    padding-left: 5%;
+    padding-right: 12%;
+    box-sizing: border-box;
+    margin: 0 auto 0%;
+  }
+
+  .education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .education-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5% 5%;
+    box-sizing: border-box;
+  }
+
+  .education-card h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: clamp(1.3rem, 1.8vw, 2rem);
+    color: white;
+  }
+
+  .certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 20px;
+  }
+
+  .skill-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 18px 22px;
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: 600;
+    box-sizing: border-box;
+  }
+
+  .future-project {
+    opacity: 0.8;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    min-height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .future-project-content {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .future-project-content p {
+    margin: 0;
+  }
+
+  .image-row img {
+    width: 30px;
+    height: 30px;
+  }
+}

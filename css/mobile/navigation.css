@@ -1,0 +1,28 @@
+@media screen and (max-width: 899px) {
+.mobile-menu-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 10px;
+  }
+
+  #mobile-menu {
+    display: flex;
+    gap: 10px;
+    margin-top: 0;
+    width: calc(100% - 20px);
+    justify-content: space-around;
+  }
+
+  #mobile-menu button {
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: white 2px solid;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+  }
+}

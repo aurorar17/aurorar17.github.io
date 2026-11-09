@@ -1,0 +1,36 @@
+@media screen and (max-width: 899px) {
+body {
+    overflow-x: hidden;
+  }
+
+  main {
+    margin-top: 40%;
+  }
+
+  h2,
+  h4 {
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+
+  .social-media-desktop {
+    display: none;
+  }
+
+  .desktop-menu-section {
+    display: none;
+  }
+
+  /* .presentation-desktop {
+    display: none;
+  } */
+
+  .header-identity h3 {
+    display: none;
+  }
+}

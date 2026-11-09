@@ -1,0 +1,141 @@
+@media screen and (min-width: 900px) {
+.presentation-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 13%;
+    padding-right: 12%;
+    padding-left: 5%;
+  }
+
+  .presentation-container {
+    display: flex;
+    margin-top: 1000px;
+  }
+
+  .presentation-desktop .text-container {
+    justify-content: flex-start;
+  }
+
+  .presentation-desktop .text-container h3 {
+    text-align: left;
+  }
+
+  .profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 40px;
+    align-items: stretch;
+    margin-top: 24px;
+  }
+
+  #professional-profile .profile-grid {
+    display: block;
+    margin-top: 24px;
+    padding: 28px;
+    border-radius: 14px;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: white;
+  }
+
+  #professional-profile .profile-photo {
+    float: right;
+    width: min(36%, 360px);
+    min-height: 0;
+    margin: 8px 0 20px 28px;
+    shape-outside: inset(0 round 14px);
+  }
+
+  #personal-profile {
+    margin-top: 4%;
+    padding-bottom: 4%;
+  }
+
+  .profile-copy,
+  .profile-photo {
+    min-width: 0;
+    min-height: 220px;
+    box-sizing: border-box;
+    border-radius: 14px;
+    color: white;
+  }
+
+  .profile-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 28px;
+    background-color: rgba(0, 0, 0, 0.45);
+  }
+
+  .profile-copy h4 {
+    margin: 0 0 12px;
+    font-size: 1.5rem;
+  }
+
+  .profile-copy p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .profile-photo {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .profile-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 220px;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+
+  #professional-profile .profile-photo img {
+    height: auto;
+    min-height: 0;
+    object-position: 56% 38%;
+  }
+
+  #professional-profile .profile-copy {
+    display: block;
+    min-height: 0;
+    overflow: visible;
+    padding: 0;
+    text-align: left;
+    background-color: transparent;
+  }
+
+  #professional-profile .profile-copy h4 {
+    text-align: left;
+  }
+
+  #professional-profile .profile-copy > p,
+  #professional-profile .profile-copy > div p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  #professional-profile .profile-copy .profile-goal {
+    margin-top: 18px;
+  }
+
+  #professional-profile .profile-grid::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+
+  .text-container {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 3rem;
+  }
+
+  .gif-container {
+    margin-left: 100px;
+  }
+}

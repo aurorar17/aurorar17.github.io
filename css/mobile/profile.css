@@ -1,0 +1,54 @@
+@media screen and (max-width: 899px) {
+.presentation-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+  }
+
+  .presentation-desktop,
+  .profile-grid {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .profile-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .profile-copy,
+  .profile-photo {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .profile-photo {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .profile-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .text-container {
+    font-size: 1.6rem;
+    margin-top: 10%;
+  }
+
+  .gif-container {
+    margin-top: 10%;
+  }
+}

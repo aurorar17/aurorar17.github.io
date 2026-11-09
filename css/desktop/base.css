@@ -1,0 +1,23 @@
+@media screen and (min-width: 900px) {
+body {
+    cursor: url("../../assets/square-cursor.png"), auto;
+    padding-top: 150px;
+  }
+
+  .mobile-menu-section {
+    display: none;
+  }
+
+  .presentation-mobile {
+    display: none;
+  }
+
+  h3 {
+    text-align: center;
+    font-weight: 1000;
+    font-size: 2.5rem;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    color: white;
+  }
+}

@@ -6,25 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurora Roilo - Portfolio</title>
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/desktop.css?v=20261104">
-    <link rel="stylesheet" href="./css/mobile.css?v=20261104">
+    <link rel="stylesheet" href="./css/desktop/base.css">
+    <link rel="stylesheet" href="./css/desktop/header.css">
+    <link rel="stylesheet" href="./css/desktop/profile.css">
+    <link rel="stylesheet" href="./css/desktop/technologies.css">
+    <link rel="stylesheet" href="./css/desktop/projects.css">
+    <link rel="stylesheet" href="./css/desktop/education.css">
+    <link rel="stylesheet" href="./css/desktop/footer.css">
+    <link rel="stylesheet" href="./css/mobile/base.css">
+    <link rel="stylesheet" href="./css/mobile/header.css">
+    <link rel="stylesheet" href="./css/mobile/profile.css">
+    <link rel="stylesheet" href="./css/mobile/navigation.css">
+    <link rel="stylesheet" href="./css/mobile/technologies.css">
+    <link rel="stylesheet" href="./css/mobile/projects.css">
+    <link rel="stylesheet" href="./css/mobile/education.css">
+    <link rel="stylesheet" href="./css/mobile/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
 
 
-    <style>
-        figcaption {
-            text-align: center;
-            /* Centra il testo */
-            color: #fcfcfc;
-            /* Cambia il colore (puoi usare codici HEX o nomi come 'red') */
-            font-size: 14px;
-            /* Opzionale: regola la grandezza del font */
-            margin-top: 8px;
-            /* Opzionale: aggiunge spazio tra immagine e testo */
-        }
-    </style>
 </head>
 
 <body>
@@ -73,21 +74,16 @@
         <section class="presentation-section" id="professional-profile">
             <div class="presentation-desktop">
                 <div class="profile-grid profile-grid-single">
-                    <article class="profile-copy">
-                        <h4>Professional Profile</h4>
-                        Digital Business student (OPIT) specializing in digital strategy, data analytics, and process optimization.<p>I bring hands-on experience in administration, team coordination, sales, and warehouse operations, leveraging tools such as Excel, RFID technology, WMS software, and KPI tracking. </p>
-                        <p>I hold technical skills in data analysis and programming (Python, SQL, Power BI, Tableau), developed through academic coursework, certifications, and hands-on personal projects. </p>
-                        <p>Strongly passionate about applying this hybrid skill set to drive digital transformation and process improvement in business environments.</p>
-                        <p> Adaptable, dynamic, and a strong team player. Data & Tech: Python, SQL, Power BI, Tableau, Advanced Excel.</p>
-                        <br>
-                        <div>
-                            <p>Focus Area: Business Analytics • Process Optimization • Supply Chain Digitalization. </p>
-                            <p>Data & Tech: Python, SQL, Power BI, Tableau, Excel.</p>
-                        </div>
-                    </article>
                     <div class="profile-photo">
                         <img src="./assets/prof.png" alt="Aurora outdoors in the mountains">
                     </div>
+                    <article class="profile-copy">
+                        <h4>Professional Profile</h4>
+                        <p>Digital Business student looking for an internship where I can combine analytics with real operations.</p>
+                        <p>Before moving into data, I worked in administration, sales and warehouse operations, using tools like WMS software, RFID and KPI tracking. Seeing how processes work on the ground is what drives my interest in improving them.</p>
+                        <p>I’m building my technical skills (<strong>Python, SQL, Power BI, Tableau, Excel</strong>) through university coursework, certifications and personal projects, which you can find below.</p>
+                        <p class="profile-goal"><strong>Aiming for roles in business operations or analytics, particularly in supply chain, digital strategy and transformation.</strong></p>
+                    </article>
                 </div>
             </div>
         </section>
@@ -200,9 +196,21 @@
                 <div class="projects-column">
                     <h3 class="projects-column-title">Data Analysis</h3>
                     <div class="projects-stack">
-                        <div class="projects-section future-project">
-                            <div class="future-project-content">
-                                <p>Coming soon</p>
+                        <div class="projects-section">
+                            <div class="project-container">
+                                <div class="clickable-div">
+                                    <h3>Retail Sales Analysis</h3>
+                                    <div class="image-row">
+                                        <img src="./assets/python.png" alt="Python">
+                                        <img src="./assets/sql.png" alt="SQL">
+                                        <img src="./assets/xlsx.png" alt="Excel">
+                                    </div>
+                                </div>
+                                <div class="project-description">
+                                    <p><strong>Demo project</strong> · Exploring a sample retail sales dataset to identify trends in revenue, top-performing products and monthly performance.</p>
+                                    <p>Tools: Python, SQL and Excel.</p>
+                                    <p class="project-demo-note">Example content to preview how a data analysis project could appear in this portfolio.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="projects-section future-project">

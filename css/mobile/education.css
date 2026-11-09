@@ -1,0 +1,44 @@
+@media screen and (max-width: 899px) {
+  .education-section {
+    padding: 5%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+  }
+
+  .education-section .education-card {
+    background-color: transparent;
+    color: white;
+  }
+
+  .education-section h3,
+  .education-section p,
+  .education-section strong {
+    color: white;
+  }
+
+  .certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .skill-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 12px 10px;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  #personal-profile {
+    margin-top: 8%;
+  }
+}
