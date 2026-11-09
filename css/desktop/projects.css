@@ -39,4 +39,48 @@
     padding: 5% 5%;
     box-sizing: border-box;
   }
+
+  .data-analysis-demo {
+    padding: 28px 30px 32px;
+  }
+
+  .data-analysis-demo-heading {
+    align-items: flex-start;
+    gap: 24px;
+    margin: 0 0 24px;
+  }
+
+  .data-analysis-demo-heading h3 {
+    margin: 0;
+    text-align: left;
+    font-size: clamp(2rem, 3.2vw, 3.5rem);
+    line-height: 1;
+  }
+
+  .data-analysis-demo .image-row {
+    display: flex;
+    flex: 0 0 auto;
+    gap: 12px;
+  }
+
+  .data-analysis-demo .image-row img {
+    width: clamp(34px, 4vw, 54px);
+    height: clamp(34px, 4vw, 54px);
+    object-fit: contain;
+  }
+
+  .data-analysis-demo .project-description {
+    margin: 0;
+    font-size: clamp(1rem, 1.45vw, 1.35rem);
+    line-height: 1.6;
+  }
+
+  .data-analysis-demo .project-description p + p {
+    margin-top: 16px;
+  }
+
+  .data-analysis-demo .project-demo-note {
+    opacity: 0.75;
+    font-size: 0.9em;
+  }
 }
